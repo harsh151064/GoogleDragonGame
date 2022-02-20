@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#box{
+    width: 90vmax;
+    height:90vmin;
+    border:1px solid black;
+    margin: 5vmin 5vmax;
+    box-shadow: 0 0 0 3in  #422407;
+    position: relative;
+    overflow: hidden;
+}
+.hide {
+    display: none;
+  }
+
+#ground {
+    --left: 0;
+    --bot:5;
+    position: absolute;
+    width: 200%;
+    bottom: calc(var(--bot)* 1%);
+    left: calc(var(--left) * 1%)
+  }
+  #ground1{
+    --left: 200;
+    --bot:5;
+    position: absolute;
+    width: 200%;
+    bottom: calc(var(--bot)* 1%);
+    left: calc(var(--left) * 1%)  
+  }
+  #dino {
+    --bottom:7 ;
+    --left:1;
+    position: absolute;
+    left: calc(var(--left) * 1%);
+    height: 20%;
+    
+    bottom: calc(var(--bottom) * 1%);
+    transition: all 1s;
+  }
+  #cactus {
+    --bot:5;
+    --left:90;
+    position: absolute;
+    left: calc(var(--left) * 1%);
+    height: 20%;
+    bottom: calc(var(--bot)* 1%);
+  }
+  #scorebox{
+      font-size: 30px;
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      font-weight: 800;
+      color: gray;
+  }
+  #startgame{
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 800;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
